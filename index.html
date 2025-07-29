@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 - A Lenda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="dark-mode-toggle">🌙</button>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>CRISTIANO RONALDO: A LENDA DO FUTEBOL</h1>
+            <p>Da Madeira ao Mundo – A Jornada do Maior Artilheiro da História</p>
+            <button class="cta-button">Explore a Trajetória ⚽</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.imgur.com/QNUZgA9.jpeg" alt="Cristiano Ronaldo em ação">
+        </div>
+    </header>
+
+    <section class="timeline">
+        <h2>LINHA DO TEMPO</h2>
+        <div class="timeline-item">
+            <h3>2002-2003: Sporting CP</h3>
+            <p>Primeiros passos no futebol profissional.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2003-2009: Manchester United</h3>
+            <p>Primeira passagem, conquista da Champions League e primeira Bola de Ouro.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2009-2018: Real Madrid</h3>
+            <p>Auge da carreira, tornando-se o maior artilheiro do clube e conquistando 4 Champions League.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2018-2021: Juventus</h3>
+            <p>Nova jornada no futebol italiano, conquistando títulos nacionais.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2021-2022: Manchester United</h3>
+            <p>O retorno a Old Trafford.</p>
+        </div>
+        <div class="timeline-item">
+            <h3>2023-Presente: Al-Nassr</h3>
+            <p>Nova aventura no futebol saudita.</p>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL_f_4_M9l_e9Q_hB_4g-x5bY-e5bY_e5b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="stats">
+        <h2>ESTATÍSTICAS</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>+890</h3>
+                <p>Gols na Carreira</p>
+            </div>
+            <div class="stat-card">
+                <h3>5</h3>
+                <p>Bolas de Ouro</p>
+            </div>
+            <div class="stat-card">
+                <h3>5</h3>
+                <p>Champions League</p>
+            </div>
+            <div class="stat-card">
+                <h3>1</h3>
+                <p>Eurocopa</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>GALERIA</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/8L4n3b6.jpeg" alt="Foto 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/bUnb3I3.jpeg" alt="Foto 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/4lHwYDL.jpeg" alt="Foto 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.imgur.com/K4g32S7.jpeg" alt="Foto 4">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/cristiano" target="_blank">Instagram</a>
+            <a href="https://twitter.com/cristiano" target="_blank">Twitter</a>
+        </div>
+        <p>"Sonhe Grande. Trabalhe Duro. Nunca Desista." – CR7</p>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

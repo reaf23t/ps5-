@@ -1,0 +1,241 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo escuro */
+body.dark-mode {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 0 5%;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: #D50000;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #D50000;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+.hero-image {
+    width: 50%;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 50px 5%;
+    background-color: #f4f4f4;
+}
+
+.timeline h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #D50000;
+}
+
+.timeline-item {
+    background-color: #FFFFFF;
+    border-left: 5px solid #D50000;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.timeline-item h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #000000;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.video-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Stats Section */
+.stats {
+    padding: 50px 5%;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.stats h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #FFD700;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+
+.stat-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin: 0;
+}
+
+.stat-card p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 5%;
+    background-color: #f4f4f4;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    color: #D50000;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.social-links a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #D50000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 50px 5%;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
